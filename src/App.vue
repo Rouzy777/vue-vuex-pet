@@ -28,11 +28,7 @@ export default {
 			{
 				link: "/todos",
 				title: "All todos"
-			},
-			{
-				link: "/weather",
-				title: "Weather"
-			},
+			}
 		]
 	}),
 	mounted() {
