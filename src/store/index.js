@@ -10,8 +10,8 @@ export default new Vuex.Store({
   },
   mutations: {
       showTodos(state, todos) {
-          state.todos = todos[0]
-          state.doneTodos = todos[1]
+          todos[0] !== null ? state.todos = todos[0] : false
+          todos[1] !== null ? state.doneTodos = todos[1] : false
       },
       mutateTodos(state, todo) {
           state.todos.push(todo)
